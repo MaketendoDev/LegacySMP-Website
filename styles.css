@@ -1,3 +1,4 @@
+
 @font-face {
     font-family: "MCBold";
     src: url("fonts/Bold.otf") format("opentype");
@@ -226,6 +227,12 @@ p {
     padding-bottom: 0;
 }
 
+/* hover effect (features) */
+.square-with-text:hover {
+    transform: translateY(-6px) scale(1.05);
+}
+
+
 /* Squares */
 .square-row {
     display: flex;
@@ -240,6 +247,8 @@ p {
     width: 200px;
     display: flex;
     flex-direction: column;
+    
+        transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 .square {
@@ -371,5 +380,3 @@ p {
 .side-btn.right img {
     transform: scaleX(-1);
 }
-
-
