@@ -1,84 +1,85 @@
 @font-face {
-  font-family: "MCBold";
-  src: url("fonts/Bold.otf") format("opentype");
+    font-family: "MCBold";
+    src: url("fonts/Bold.otf") format("opentype");
 }
 
 @font-face {
-  font-family: "MCBoldItalic";
-  src: url("fonts/BoldItalic.otf") format("opentype");
+    font-family: "MCBoldItalic";
+    src: url("fonts/BoldItalic.otf") format("opentype");
 }
 
 @font-face {
-  font-family: "MCItalic";
-  src: url("fonts/Italic.otf") format("opentype");
+    font-family: "MCItalic";
+    src: url("fonts/Italic.otf") format("opentype");
 }
 
 @font-face {
-  font-family: "MCRegular";
-  src: url("fonts/Regular.otf") format("opentype");
+    font-family: "MCRegular";
+    src: url("fonts/Regular.otf") format("opentype");
 }
 
 body {
-  background-color: #4b5aaf;
-  cursor: url('images/cursor.png'), auto;
-  margin: 0;
+    background-color: #4b5aaf;
+    cursor: url("images/cursor.png"), auto;
+    margin: 0;
 }
 
-
 h1 {
-  color: white;
-  text-align: left;
-  font-family: "MCBold", sans-serif;
-  margin: 10px 0;
+    color: white;
+    text-align: left;
+    font-family: "MCBold", sans-serif;
+    margin: 10px 0;
 }
 
 p {
-  font-family: "Minecraft", monospace;
-  font-size: 20px;
-  text-align: left;
-  margin: 5px 0;
-  color: white;
+    font-family: "Minecraft", monospace;
+    font-size: 20px;
+    text-align: left;
+    margin: 5px 0;
+    color: white;
 }
 
 .top-bar {
-  background-color: #333;
-  height: 57px;
-  display: flex;
-  align-items: center;
-  position: relative;
-  padding-left: 11px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    position: fixed;
+    background-color: #333;
+    height: 57px;
+    display: flex;
+    align-items: center;
+    padding-left: 11px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    z-index: 100;
 }
 
 .top-bar nav {
-  display: flex;
-  gap: 14px;
-  z-index: 1;
+    display: flex;
+    gap: 14px;
+    z-index: 1;
 }
 
 .top-bar nav a {
-  font-size: 1.2em;
-  color: white;
-  font-family: "MCBold", monospace;
-  text-decoration: none;
+    font-size: 1.2em;
+    color: white;
+    font-family: "MCBold", monospace;
+    text-decoration: none;
 }
 
 .top-bar nav a:hover {
-  text-decoration: underline;
-  font-family: "MCBoldItalic", monospace;
+    text-decoration: underline;
+    font-family: "MCBoldItalic", monospace;
 }
 
 .minecraft-title {
-  position: absolute;
-  top: 17px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 409px;
-  z-index: 2;
+    position: absolute;
+    top: 17px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 409px;
+    z-index: 2;
 }
 
 .content {
-  padding: 15px;
+    padding: 15px;
 }
 
 .image-container {
@@ -95,15 +96,14 @@ p {
 
 .image-container .mc-button {
     position: absolute;
-    scale: 1.4; 
+    scale: 1.4;
     transform: translate(-50%, -50%);
     z-index: 2;
 }
 
-
 .small-text {
     color: darkgray;
-    font-family: 'MCItalic', sans-serif;
+    font-family: "MCItalic", sans-serif;
     font-size: 1.2rem;
     margin: 0;
 }
@@ -111,8 +111,8 @@ p {
 /* Button CSS */
 .button-wrapper {
     position: absolute;
-    top: 92%;      
-    left: 55%;     
+    top: 92%;
+    left: 55%;
     transform: translate(-50%, -50%);
     display: flex;
     flex-direction: column;
@@ -127,7 +127,7 @@ p {
     overflow: hidden;
     white-space: nowrap;
     user-select: none;
-    background: #999 url('https://i.ibb.co/rb2TWXL/bgbtn.png') center / cover;
+    background: #999 url("https://i.ibb.co/rb2TWXL/bgbtn.png") center / cover;
     image-rendering: pixelated;
     border: 2px solid #000;
     display: flex;
@@ -137,7 +137,7 @@ p {
 
 .small-text {
     color: darkgray;
-    font-family: 'MCItalic', sans-serif;
+    font-family: "MCItalic", sans-serif;
     text-align: center;
     font-size: 1.2rem;
     margin: 0;
@@ -155,47 +155,51 @@ p {
     overflow: hidden;
     white-space: nowrap;
     user-select: none;
-    background: #999 url('https://i.ibb.co/rb2TWXL/bgbtn.png') center / cover;
+    background: #999 url("https://i.ibb.co/rb2TWXL/bgbtn.png") center / cover;
     image-rendering: pixelated;
     border: 2px solid #000;
     display: inline-block;
 }
 
 .mc-button:hover .title {
-  background-color: rgba(100, 100, 255, 0.45);
-  text-shadow: 2px 0px #202013CC;
-  color: #FFFFA0;
+    background-color: rgba(100, 100, 255, 0.45);
+    text-shadow: 2px 0px #202013cc;
+    color: #ffffa0;
 }
 
 .mc-button:active .title {
-  box-shadow: inset -2px -4px #0004, inset 2px 2px #FFF5;
+    box-shadow:
+        inset -2px -4px #0004,
+        inset 2px 2px #fff5;
 }
 
 .mc-button .title {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 0.5em;
-  font-size: 2.5;
-  font-family: MCRegular, monospace;
-  color: #DDD;
-  text-shadow: 2px 2px #000A;
-  box-shadow: inset -2px -4px #0006, inset 2px 2px #FFF7;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 0.5em;
+    font-size: 2.5;
+    font-family: MCRegular, monospace;
+    color: #ddd;
+    text-shadow: 2px 2px #000a;
+    box-shadow:
+        inset -2px -4px #0006,
+        inset 2px 2px #fff7;
 }
 
 .mc-button.full {
-  width: 100%;
+    width: 100%;
 }
 
 .mc-button.lang img {
-  width: 26px;
-  height: 26px;
+    width: 26px;
+    height: 26px;
 }
 
 .mc-button.lang .title {
-  padding-bottom: 0;
+    padding-bottom: 0;
 }
 
 /* Squares */
@@ -207,7 +211,6 @@ p {
     align-items: flex-start;
     width: 100%;
 }
-
 
 .square-with-text {
     width: 200px;
@@ -238,16 +241,16 @@ p {
     background: #1d3fa0;
     border: 2px solid #000;
     color: white;
-    font-family: 'MCRegular', sans-serif;
+    font-family: "MCRegular", sans-serif;
     font-size: 0.9rem;
     line-height: 1.2;
-    box-shadow: inset 0 0 0 2px rgba(255,255,255,0.2);
+    box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.2);
     box-sizing: border-box;
 }
 
 .square-text h3 {
     margin: 0 0 6px 0;
-    font-family: 'MCBold', sans-serif;
+    font-family: "MCBold", sans-serif;
 }
 
 .staff-section {
@@ -266,7 +269,7 @@ p {
     padding: 15px;
     background: #1d3fa0;
     border: 2px solid #000;
-    box-shadow: inset 0 0 0 2px rgba(255,255,255,0.2);
+    box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.2);
     align-items: center;
 }
 
@@ -286,18 +289,16 @@ p {
 
 /* Text area */
 .staff-info h2 {
-    font-family: 'MCBold', sans-serif;
+    font-family: "MCBold", sans-serif;
     margin: 0 0 5px 0;
     font-size: 1.4rem;
     color: white;
 }
 
 .staff-info p {
-    font-family: 'MCRegular', sans-serif;
+    font-family: "MCRegular", sans-serif;
     margin: 0;
     font-size: 1rem;
     color: white;
     line-height: 1.3;
 }
-
-
