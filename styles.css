@@ -29,7 +29,7 @@ h1 {
     text-align: left;
     font-family: "MCBold", sans-serif;
     margin: 10px 0;
-    text-shadow: 2px 2px 0px rgba(63,63,63,1)
+    text-shadow: 2px 2px rgba(63,63,63,1)
 }
 
 p {
@@ -38,7 +38,7 @@ p {
     text-align: left;
     margin: 5px 0;
     color: white;
-    text-shadow: 2px 2px 0px rgba(63,63,63,1)
+    text-shadow: 2px 2px rgba(63,63,63,1)
 }
 
 .top-bar {
@@ -83,14 +83,23 @@ p {
 }
 
 .top-title-small {
-    margin-top: -17px;
+    margin-top: 5px;
     height: 60px;
     top: 14;
     position: absolute;
     right: 31px;
     opacity: 0;
     transition: opacity 0.5s ease;
+}
 
+.top-title-small-default {
+    margin-top: -17px;
+    height: 60px;
+    top: 14;
+    position: absolute;
+    right: 31px;
+    opacity: 1;
+    transition: opacity 0.5s ease;
 }
 
 .content {
@@ -121,14 +130,14 @@ p {
     font-family: "MCItalic", sans-serif;
     font-size: 1.2rem;
     margin: 0;
-    text-shadow: 2px 2px 0px rgba(63,63,63,1)
+    text-shadow: 2px 2px rgba(63,63,63,1)
 }
 
 /* Button CSS */
 .button-wrapper {
     position: absolute;
     top: 92%;
-    left: 55.6%;
+    left: 50%;
     transform: translate(-50%, -50%);
     display: flex;
     flex-direction: column;
@@ -156,7 +165,7 @@ p {
     font-size: 1.2rem;
     margin: 0;
     width: 100%;
-    text-shadow: 2px 2px 0px rgba(63,63,63,1)
+    text-shadow: 2px 2px rgba(63,63,63,1)
 }
 
 .mc-button-link {
@@ -178,7 +187,7 @@ p {
 
 .mc-button:hover .title {
     background-color: rgba(100, 100, 255, 0.45);
-    text-shadow: 2px 2px 0px rgba(63,63,63,1);
+    text-shadow: 2px 2px rgba(63,63,63,1);
     color: #ffffa0;
 }
 
