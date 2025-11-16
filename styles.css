@@ -163,7 +163,7 @@ p {
 
 .mc-button:hover .title {
     background-color: rgba(100, 100, 255, 0.45);
-    text-shadow: 2px 0px #202013cc;
+    text-shadow: 2px 2px #202013cc;
     color: #ffffa0;
 }
 
