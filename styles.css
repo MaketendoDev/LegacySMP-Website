@@ -325,6 +325,26 @@ p {
     transform: translateY(-6px) scale(1.05);
 }
 
+/* Main rule card */
+.rule-card {
+    display: flex;
+    gap: 20px;
+    padding: 15px;
+    background: #9d9d9d;
+    /*border: 2px solid #000;*/
+    box-shadow:
+        inset -4px -4px #ffffff,
+        inset 4px 4px #3e3e3e;
+    align-items: center;
+}
+
+.rule-card {
+    transition: transform 0.25s ease;
+}
+
+.rule-card:hover {
+    transform: translateY(-6px) scale(1.01);
+}
 
 
 /* Opposite direction (image on right) */
