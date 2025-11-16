@@ -29,7 +29,7 @@ h1 {
     text-align: left;
     font-family: "MCBold", sans-serif;
     margin: 10px 0;
-    text-shadow: 2px 2px 0px rgba(63, 63, 63, 1);
+    text-shadow: 2px 2px 0px rgba(63,63,63,1)
 }
 
 p {
@@ -38,7 +38,7 @@ p {
     text-align: left;
     margin: 5px 0;
     color: white;
-    text-shadow: 2px 2px 0px rgba(63, 63, 63, 1);
+    text-shadow: 2px 2px 0px rgba(63,63,63,1)
 }
 
 .top-bar {
@@ -64,18 +64,16 @@ p {
     color: white;
     font-family: "MCBold", monospace;
     text-decoration: none;
-    text-shadow: 2px 2px 0px rgba(63, 63, 63, 1);
 }
 
 .top-bar nav a:hover {
     text-decoration: underline;
     font-family: "MCBoldItalic", monospace;
-    text-shadow: 2px 2px 0px rgba(63, 63, 63, 1);
 }
 
 .minecraft-title {
     position: absolute;
-    top: -6px;
+    top: 17px;
     left: 50%;
     transform: translateX(-50%);
     width: 409px;
@@ -96,7 +94,6 @@ p {
     height: 685px;
     object-fit: cover;
     display: block;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 .image-container .mc-button {
@@ -111,25 +108,22 @@ p {
     font-family: "MCItalic", sans-serif;
     font-size: 1.2rem;
     margin: 0;
-    text-shadow: 2px 2px 0px rgba(63, 63, 63, 1);
+    text-shadow: 2px 2px 0px rgba(63,63,63,1)
 }
 
 /* Button CSS */
 .button-wrapper {
     position: absolute;
-    top: 93%;
-    left: 55%;
-    transform: translateX(-50%);
+    top: 92%;
+    left: 55.6%;
+    transform: translate(-50%, -50%);
     display: flex;
     flex-direction: column;
     gap: 251px;
     z-index: 10;
 }
 
-
 .mc-button {
-    height: var(--btn-size);
-    width: calc(var(--btn-size) * 10);
     cursor: pointer;
     overflow: hidden;
     white-space: nowrap;
@@ -149,7 +143,7 @@ p {
     font-size: 1.2rem;
     margin: 0;
     width: 100%;
-    text-shadow: 2px 2px 0px rgba(63, 63, 63, 1);
+    text-shadow: 2px 2px 0px rgba(63,63,63,1)
 }
 
 .mc-button-link {
@@ -167,12 +161,11 @@ p {
     image-rendering: pixelated;
     border: 2px solid #000;
     display: inline-block;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 .mc-button:hover .title {
     background-color: rgba(100, 100, 255, 0.45);
-    text-shadow: 2px 2px 0px rgba(63, 63, 63, 1);
+    text-shadow: 2px 2px 0px rgba(63,63,63,1);
     color: #ffffa0;
 }
 
@@ -211,13 +204,6 @@ p {
     padding-bottom: 0;
 }
 
-.center {
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 10;
-}
-
 /* Squares */
 .square-row {
     display: flex;
@@ -241,7 +227,6 @@ p {
     overflow: hidden;
     background: #00000033;
     box-sizing: border-box;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 .square img {
@@ -261,14 +246,13 @@ p {
     font-family: "MCRegular", sans-serif;
     font-size: 0.9rem;
     line-height: 1.2;
-    box-shadow: 0 14px 17px rgba(0, 0, 0, 0.3);
+    box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.2);
     box-sizing: border-box;
 }
 
 .square-text h3 {
     margin: 0 0 6px 0;
     font-family: "MCBold", sans-serif;
-        text-shadow: 2px 2px 0px rgba(63, 63, 63, 1);
 }
 
 .staff-section {
@@ -287,7 +271,7 @@ p {
     padding: 15px;
     background: #1d3fa0;
     border: 2px solid #000;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.2);
     align-items: center;
 }
 
@@ -311,7 +295,6 @@ p {
     margin: 0 0 5px 0;
     font-size: 1.4rem;
     color: white;
-    text-shadow: 2px 2px 0px rgba(63, 63, 63, 1);
 }
 
 .staff-info p {
@@ -320,74 +303,6 @@ p {
     font-size: 1rem;
     color: white;
     line-height: 1.3;
-    text-shadow: 2px 2px 0px rgba(63, 63, 63, 1);
 }
 
-/* Container Stuff */
-.container {
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-.box {
-    flex: 1;
-    min-width: 280px;
-    background: #2c2c3e;
-    padding: 20px;
-    border-radius: 10px;
-}
-.box h2 {
-    margin-top: 0;
-    font-size: 1.4em;
-    color: #6cf0ff;
-}
-.box p {
-    margin: 8px 0 0;
-    font-size: 0.95em;
-    color: #ccc;
-}
 
-/* Video Container */
-.video-wrapper {
-    position: relative;
-    width: max-content;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    margin-top: 84px; 
-}
-
-.side-btn {
-    position: absolute;
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: 0;
-    width: 48px;
-    height: 48px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.side-btn img {
-    width: 200%;
-    height: 200%;
-    image-rendering: pixelated;
-}
-
-.side-btn.left {
-    left: -60px;
-}
-
-.side-btn.right {
-    right: -60px;
-}
-
-.side-btn:hover img {
-    filter: brightness(1.3);
-}
-
-.side-btn.right img {
-    transform: scaleX(-1);
-}
