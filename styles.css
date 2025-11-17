@@ -86,7 +86,6 @@ p {
 }
 
 .top-title-small {
-    margin-top: 5px;
     height: 60px;
     top: 14;
     position: absolute;
@@ -112,6 +111,9 @@ p {
 .image-container {
     position: relative;
     width: 100%;
+    box-shadow:
+         outset -2px -4px #0006,
+         outset 2px 2px #fff7;;
 }
 
 .smp-image {
@@ -119,9 +121,7 @@ p {
     height: 685px;
     object-fit: cover;
     display: block;
-        box-shadow:
-        inset -2px -4px #0006,
-        inset 2px 2px #fff7;;
+
 }
 
 .image-container .mc-button {
@@ -246,7 +246,7 @@ p {
     gap: 50px;
     justify-content: center;
     align-items: flex-start;
-    width: 100%;
+    width: 100%,;
 }
 
 .square-with-text {
@@ -260,11 +260,11 @@ p {
 .square {
     width: 119%;
     aspect-ratio: 1 / 1;
-    border: 2px solid black;
+    border: 4px solid #0006;
     overflow: hidden;
     background: #00000033;
     box-sizing: border-box;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+
 }
 
 .square img {
@@ -272,6 +272,9 @@ p {
     height: 100%;
     object-fit: cover;
     display: block;
+    box-shadow:
+        inset -4px -4px #ffffff,
+        inset 4px 4px #3e3e3e;
 }
 
 .square-text {
@@ -279,15 +282,15 @@ p {
     padding: 12px;
     width: 119%;
     background: #9d9d9d;
-    border: 2px solid #000;
     color: white;
     font-family: "MCRegular", sans-serif;
     font-size: 0.9rem;
     line-height: 1.2;
     box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.2);
     box-sizing: border-box;
-
-    box-shadow: 0 14px 17px rgba(0, 0, 0, 0.3);
+    box-shadow:
+        inset -4px -4px #ffffff,
+        inset 4px 4px #3e3e3e;
 }
 
 .square-text h3 {
@@ -329,6 +332,8 @@ p {
     border: 2px solid black;
     object-fit: cover;
     background: #00000033;
+    box-shadow:
+     4px 4px black,
     
 }
 
